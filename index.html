@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="štamparija 3Dgrafika Užice" />
+    <title>Štamparija</title>
+    <link rel="stylesheet" href="style.css" />
+    <script async src="main.js"></script>
+  </head>
+  <body>
+    <div class="tophead">
+      <img class="logo" src="assets/logo3d-removebg-preview.png" alt="head" />
+    </div>
+    
+
+    <div class="top"></div>
+
+    <div class="content">
+      <div class="left">
+        <h1 localization-key="name">Štamparija 3Dgrafika</h1>
+        <p localization-key="middle">
+          Štamparija 3D grafika osnovana je u prošlom veku. Od tada,
+          specijalizovali smo se za kvalitetnu štampu i dizajn raznih
+          materijala, sve za vaše potrebe i standarde.
+        </p>
+      </div>
+
+      <div class="right">
+        <div class="aside">
+          <h2>Šta nudimo?</h2>
+          <p>
+            Štampa visoke rezolucije i kvaliteta. Fleksibilnost, tolerancija i,
+            naravno, dogovor...
+          </p>
+          <h2>Gde?</h2>
+          <p>U ulici Vuka Karadžića bb, 31000 Užice</p>
+          <h2>Kako?</h2>
+          <p>
+            Za sve naše usluge Vama, kontaktirajte nas putem telefona ili mejla,
+            radi dogovora.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="header">
+      <div class="nav-item">
+          <a>Naše usluge</a>
+      </div>
+          <div class="panel">
+          <ul>
+            <li><p>Katalozi, prospekti, lifleti</p></li>
+            <li><p>Časopisi, knjige, brošure</p></li>
+            <li><p>Propagandni materijal (flajeri, plakati...)</p></li>
+            <li><p>Reklamni blokovi, kalndari, fascikle</p></li>
+            <li><p>Etikete, nalepnice, deklaracije</p></li>
+            <li><p>Laka hromokartonska ambalaža, kutije</p></li>
+            <li><p>Vizit karte, džepni kalendari</p></li>
+            <li>
+              <p>Blokovska roba (računi, otpremnice, obrasci, mamorandumi...)</p>
+            </li>
+            <li><p>Trgovina reklamnim i kancelarijskim materijalom</p></li>
+        </ul>
+        
+      </div>
+      <div class="nav-item">
+        <a>Društvene mreže na kojima nas možete naći</a>
+      </div>
+      <div class="panel icon">
+          <!--<a href="#"><img src="assets/facebook_50x50.png" alt="facebook"></a>-->
+          <a href="https://www.instagram.com/3dgrafika_stamparija/"><img src="assets/instagram_50x50.png" alt="instagram"></a>
+      </div>
+      <div class="nav-item">
+        <a>Naša lokacija </a>
+      </div>
+      <div class="panel">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.007115067877!2d19.83108388885498!3d43.855681200000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4759d349cbe165db%3A0x86ab0c47b3c5d286!2s3D%20Grafika!5e0!3m2!1ssr!2srs!4v1683747108551!5m2!1ssr!2srs"
+         width="400" 
+         height="300" 
+         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+    <div class="footer">
+      <div>
+        <p>Kontaktirajte nas, rado ćemo Vam posvetiti vreme:</p>
+      </div>
+      <div>
+        <p>Adresa</p>
+        <hr />
+        <br />Vuka Karadžića bb, 31000 Užice
+      </div>
+      <div>
+        <p>Telefon</p>
+        <hr />
+        <br /><a href="tel://+38131521683">+381 31 521 683 </a><br /><a
+          href="tel://+38131524626"
+          >+381 31 524 626</a
+        >
+      </div>
+      <div>
+        <p>E-mail adresa</p>
+        <hr />
+        <br /><a href="mailto:tridegrafika@gmail.com">tridegrafika@gmail.com</a>
+      </div>
+      <!--<div class="fsn">
+        <p>Društvene mreže</p>
+        <hr />
+        <br />
+        <div class="icon">
+          <a href="#">
+            <img src="images/facebook_50x50.png" alt="facebook" />
+          </a>
+
+          <a href="#">
+            <img src="images/instagram_50x50.png" alt="instagram" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="logo1">
+      <img src="assets/logo3d-removebg-preview.png" alt="logo" />
+    </div>-->
+    <script>
+      var acc = document.getElementsByClassName("nav-item");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>
