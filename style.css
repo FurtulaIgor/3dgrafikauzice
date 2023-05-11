@@ -1,10 +1,12 @@
+/** @format */
+
 * {
   box-sizing: border-box;
 }
 
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url("assets/memo2.png");
+    url("assets/memo2.webp");
   //background-position: top;
   color: #fff;
   //background-repeat: no-repeat;
@@ -23,19 +25,15 @@ html {
 
 .tophead {
   position: relative;
-  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
+  aspect-ratio: 381 / 80;
   max-width: 100%;
-  height: auto;
-  height: 130px;
-  margin: 10px;
-  flex: 1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 30px 10px;
 }
 .menu {
   flex: 2;
@@ -43,7 +41,6 @@ html {
 
 .header {
   align-items: center;
-  margin-left: 1em;
 }
 
 .panel {
@@ -51,6 +48,11 @@ html {
   display: none;
   background-color: rgba(0, 0, 0, 0.3);
   overflow: hidden;
+}
+
+.icon {
+  justify-content: start;
+  padding: 10px;
 }
 
 .menu li {
@@ -76,6 +78,12 @@ html {
   background: rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
+
+.map {
+  padding: 1rem;
+  justify-content: space-around;
+}
+
 .active,
 .nav-item:hover {
   background-color: rgba(0, 0, 0, 0.3);
@@ -98,10 +106,7 @@ html {
   padding: 2em;
   font-size: 15px;
 }
-.icon {
-  display: flex;
-  justify-content: space-around;
-}
+
 .icon > a > img {
   filter: invert(1);
 }
@@ -121,10 +126,6 @@ html {
   .footer,
   .content {
     flex-direction: column;
-  }
-  .logo {
-    margin-bottom: 20px;
-    padding: 1em 2em 1em 1em;
   }
   .content {
     text-align: center;
